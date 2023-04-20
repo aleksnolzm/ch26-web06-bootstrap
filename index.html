@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo-shuriken"
+            src="./assets/img/shuriken.png"
+            alt="shuriken logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/smanueltorres/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Proyectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Calculadora</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Acerca de -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <h1>Sergio Torres</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>Desarrollador de artes oscuras</h3>
+        </div>
+        <div class="col-12 col-md-6"><h3>DJ de noche</h3></div>
+      </div>
+    </div>
+    <!-- Carrosel -->
+    <div class="container mt-4 text-center">
+      <div class="row justify-content-center">
+        <!-- Carrosel -->
+        <div class="col-9 mb-2">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="./assets/img/carousel_01.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Ninja en espera"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./assets/img/carousel_02.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Ninja dando patada"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./assets/img/carousel_03.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Mujer ninja"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./assets/img/carousel_04.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Ninjas con katana"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- descripción carrosel -->
+        <div class="col-12 col-lg-3">
+          <!-- Descripción -->
+          <div class="row">
+            <div class="col">
+              <p>
+                Me inicié como desarrollador con técnicas ninjas Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Quam, inventore.
+                Aut magni iure molestiae nihil. Reprehenderit totam
+                exercitationem deleniti commodi, delectus impedit praesentium
+                unde autem porro vitae dolorum aut quibusdam.
+              </p>
+            </div>
+          </div>
+          <!-- Botón linkedin -->
+          <div class="row">
+            <div class="col">
+                <a
+                href="https://www.linkedin.com/in/smanueltorres/"
+                target="_blank"
+              >
+                <button type="button" class="btn btn-dark">
+                  <i class="bi bi-linkedin"></i> Contáctame
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#5000ca" fill-opacity="1" d="M0,160L34.3,138.7C68.6,117,137,75,206,85.3C274.3,96,343,160,411,181.3C480,203,549,181,617,165.3C685.7,149,754,139,823,149.3C891.4,160,960,192,1029,197.3C1097.1,203,1166,181,1234,149.3C1302.9,117,1371,75,1406,53.3L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+      </svg>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
