@@ -1,0 +1,80 @@
+body{
+    background: rgb(103,16,157);
+    background: linear-gradient(176deg, rgba(114,15,176,1) 0%, rgba(0,0,0,1) 74%);
+    background-repeat: none;
+    color: whitesmoke;
+    height: 100vh;
+}
+
+#particle-canvas{   
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.logo-shuriken{
+    width: 40px;
+    height: auto;
+}
+
+.calculator-box{
+    width: 234px;
+    height: 318px;
+    border-radius: 8px;
+    background-color: rgba(70, 70, 72, 0.439);
+    border: 1px solid rgba(124, 124, 128, 0.400);
+}
+
+.display-container{
+    height: 60px;
+}
+
+.btn-gray-high{
+    background-color: rgba(161, 161, 161, 0.162);
+}
+
+.btn-yellow-low{
+    background-color: rgba(225, 146, 0, 0.943);
+}
+
+.btn-gray-middle{
+    background-color: rgba(157, 159, 160, 0.253);
+}
+
+.btn-zero{
+    border-radius: 0 0 0 8px;
+}
+
+.btn-equals{
+    border-radius: 0 0 8px 0;
+}
+
+input{
+    width: 100%;
+    height: 48px;
+    color: whitesmoke;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid rgba(141, 141, 147, 0.110);
+    transition: all 0.2s ease;
+
+}
+
+input:active{
+    filter: brightness(140%);
+}
+
+.output {
+    font-size: 1.6em;
+}
+
+.historial-div, .output-div{
+    overflow: hidden;
+    width: 100%;
+    text-align: right;
+}
+
+.output-div p {
+    float: left;
+}
