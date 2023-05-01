@@ -1,0 +1,22 @@
+.logo-shuriken{
+    width: 40px;
+    height: auto;
+}
+
+.game-block-row{
+    padding-top: 6em;
+}
+
+.game-block{
+    border-radius: 8px;
+    background-color: rgba(45, 18, 109, 0.439);
+    border: 1px solid rgba(126, 124, 128, 0.4);
+}
+
+p, label{
+    font-size: 1.2em;
+}
+
+.btn-no-display{
+    display: none;
+}
