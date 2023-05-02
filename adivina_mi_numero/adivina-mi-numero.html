@@ -44,17 +44,20 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="./views/dime-tu-nombre.html">Dime tu nombre</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./calculadora.html">Calculadora</a>
-                            </li>
-                            <li>
+                                <a class="dropdown-item" href="../views/dime-tu-nombre.html">Dime tu nombre</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="../calculadora/calculadora.html">Calculadora</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="../adivina_mi_numero/adivina-mi-numero.html">Adivina Mi Numero</a>
+                              </li>
+                              <li>
                                 <hr class="dropdown-divider" />
-                            </li>
-                            <li>
+                              </li>
+                              <li>
                                 <a class="dropdown-item disabled" href="#">En Construcción</a>
-                            </li>
+                              </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -69,33 +72,36 @@
     <main>
         <!-----  Game Container Space -->
         <div class="container">
+            <div class="row my-2 justify-content-center">
+                <div class="col-sm-12 text-center col-lg-12 py-2">
+                    <h1 class="my-2">Adivina Mi Numero</h1>
+                </div>
+            </div>
             <div class="row my-2 justify-content-center game-block-row">
                 <div class="col-sm-10 col-lg-12 col-10 text-center py-2 px-auto game-block">
                     <!----  main container of the game ---->
                     <div class=" row mx-auto justify-content-center">
-                        <div class="col-sm-12 col-lg-12 py-2">
-                            <h1 class="my-2">Adivina Mi Numero</h1>
-                            <br>
-                            <p class="my-2">Ingresa un numero aleatoreo del 1 al 100 y observa como la app va adivinando</p>
+                        <div class="col-sm-12 col-lg-12 col-12 my-4">
+                            <label for="input-user-number">Presiona el boton para iniciar</label>
                         </div>
-                        <div class="col-sm-12 col-lg-4 col-6">
-                            <label for="input-user-number">Pon tu Numero Pensado</label>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 col-6 py-2">
-                            <input class="input-number" type="number" min="1" max="100" placeholder="1, 35, etc..."
-                            name="input-user-number" id="input-user-number" required>
-                        </div>
-                        <div class="col-sm-12 col-lg-12 py-2">
-                            <button id="btn-input-number" type="button" class="btn btn-secondary btn-lg">Adivinar</button>
+                        <div class="col-sm-12 col-lg-4 py-2">
+                            <button id="btn-input-number" type="button"
+                                class="btn btn-secondary btn-lg">Adivinar</button>
                         </div>
                     </div>
-                    <div class="row mx-auto justify-content-center">
-
+                    <div class="row mx-auto justify-content-md-center">
                         <div class="col-sm-12 col-lg-12 py-2">
                             <p id="answer-by-correct-num">Esperando tu número</p>
                         </div>
-                        <div class="btn-container col-sm-12 col-lg-12 py-2">
-                            <button id="btn-correct-number" type="button" class="btn btn-success mx-3 btn-lg btn-no-display">Si </button>
+                        <div class="btn-container col-sm-12 col-lg-3 py-2 px-0">
+                            <button id="btn-is-lower" type="button" class="btn btn-info mx-1 btn-lg" disabled>Es Menor</button>
+                        </div>
+                        <div class="btn-container col-sm-12 col-lg-2 py-2 px-0">
+                            <button id="btn-correct-number" type="button" class="btn btn-success mx-3 btn-lg" disabled>Si
+                            </button>
+                        </div>
+                        <div class="btn-container col-sm-12 col-lg-3 py-2 px-0">
+                            <button id="btn-is-higher" type="button" class="btn btn-info mx-1 btn-lg" disabled>Es Mayor</button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +112,9 @@
     </footer>
     <!-------- Scripts ------------>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
     <script src="./adivina-mi-numero.js"></script>
 </body>
 

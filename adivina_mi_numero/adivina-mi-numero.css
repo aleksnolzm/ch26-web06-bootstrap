@@ -1,3 +1,11 @@
+body{
+    background: rgb(103,16,157);
+    background: linear-gradient(176deg, rgba(114,15,176,1) 0%, rgba(0,0,0,1) 74%);
+    background-repeat: none;
+    height: 120vh;
+    color: whitesmoke;
+}
+
 .logo-shuriken{
     width: 40px;
     height: auto;
@@ -8,15 +16,12 @@
 }
 
 .game-block{
+    max-width: 600px;
     border-radius: 8px;
-    background-color: rgba(45, 18, 109, 0.439);
-    border: 1px solid rgba(126, 124, 128, 0.4);
+    background-color: rgba(49, 49, 49, 0.439);
+    border: 1px solid rgba(163, 163, 163, 0.4);
 }
 
 p, label{
     font-size: 1.2em;
-}
-
-.btn-no-display{
-    display: none;
 }
