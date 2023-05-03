@@ -2,3 +2,8 @@
     width: 40px;
     height: auto;
 }
+
+.obtain-date-container{
+    max-width: 680px;
+    margin-top: 4em;
+}
