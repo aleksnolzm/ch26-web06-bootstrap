@@ -8,6 +8,30 @@ body{
     width: 40px;
     height: auto;
 }
-
-
+    
+  
+  @media screen and (max-width: 600px) {
+    
+    table thead {
+      position: absolute;
+      width: 0;
+    }
+    
+    table tr {
+      display: block;
+    }
+    
+    table td {
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+    }
+  }
+  
+  
 

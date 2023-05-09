@@ -69,7 +69,7 @@
   </nav>
 
   <section>
-    <div class="container-fluid p-4 bg-black text-white">
+    <div class="container-fluid p-4 bg-info text-white">
         <div class="row justify-content-center">
           <div class="col col-8 text-center align-items-center py-2">
             <h1 class="my-2">Obtener datos de API con Fetch</h1>
@@ -77,9 +77,25 @@
         </div>
       <div class="row justify-content-center">
         <div class="col button-container col-12 text-center align-items-center my-1">
-
+          <button id="btn-get-users" type="button" class="btn btn-outline-light">Get Users</button>
         </div>
-        <div class="col table-container col-12 text-center align-items-center my-1">
+        <div class="col table-container col-12 text-center justify-content-center my-2">
+          <!--  Tabla de usuarios-->
+          <table class="table table-responsive table-hover w-100">
+            <caption class="caption-top text-center">Lista de Usuarios</caption>
+            <thead class="overflow-hidden">
+              <tr class="border p-1">
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">E-Mail</th>
+                <th scope="col">Image</th>
+              </tr>
+            </thead>
+            <tbody id="users-container">
+            
+            </tbody>
+          </table>
 
         </div>
       </div>
